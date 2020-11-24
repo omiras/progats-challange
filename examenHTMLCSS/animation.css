@@ -1,0 +1,11 @@
+.back-card {
+    display: none;
+}
+
+.front-card:hover {
+
+}
+
+.flipping-card {
+    width: 100%;
+}

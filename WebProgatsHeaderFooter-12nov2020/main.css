@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 80%;
+    margin: 0 auto;
+
+}
+a {
+  text-decoration: none;  
+  color: #7A4831;
+}
+
+.main--header {
+    margin-top: 8px;
+    background-color: rgba(190,183,171,0.2);
+
+}
+.main--footer {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(190,183,171,0.2);
+    text-align: center;
+}
+
+.navigation-bar__items {
+    list-style: none;
+    display: inline-block;
+    margin: 0 0 0 64px;
+    padding: 0;
+    vertical-align: middle;
+}
+
+.navigation-bar__item {
+    display: inline-block;
+    margin-left: 16px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.navigation-bar__item:hover {
+    background-color: #7A4831;
+}
+
+.navigation-bar__item a {
+    color: #F2B366;
+}
+
+.navigation-bar__item.item--contact a {
+    color: #7A4831;
+}
+
+.navigation-bar__item.item--contact:hover {
+    background-color: #F2B366;
+
+}
+
+.navigation-bar__logo {
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.hero-image {
+    background-color:  rgba(190,183,171,0.2);
+    background-image: url('/img/sleepingCat.jpg');
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:  center  40%;
+    text-align: center;
+}
+
+.hero-image--title {
+    color: #f2f2f2;
+    margin: 0;
+    padding-top: 2%;
+}
+
+.team {
+    text-align: center;
+}
+
+.team--title {
+    text-align: center;
+    color: #A76E52;
+}
+
+.team--member {
+    display: inline-block;
+    padding-right: 100px;
+    padding-left: 100px;
+}
+
+.team--member__name {
+    color: #A76E52;
+}
+
+.team--member > img {
+    border: 5px solid transparent;
+}
+
+.team--member > img:hover {
+    border: 5px solid black;
+    border-radius: 8px;
+}
+

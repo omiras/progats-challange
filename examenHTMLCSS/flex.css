@@ -1,0 +1,203 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 95%;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    font-size: 3vw;
+}
+
+#introduction {
+    height: 60vh;
+    margin-top: 1rem;
+    background-image: url('img/mobileCat.jpg');
+    background-size: cover;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+}
+
+.introduction--title {
+    color: #f2f2f2;
+    text-shadow: 2px 2px #252424c5;
+    font-size: 1.4rem;
+}
+.navigation-bar__items {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+}
+
+.navigation-bar__item a {
+    text-decoration: none;
+    color: #F2B366; 
+    font-weight: bold;
+}
+
+.logo-image {
+    display: none;
+}
+
+.navigation-bar__title {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #F2B366; 
+    text-shadow: 2px 2px #3F2F21;
+}
+
+.navigation-bar__item {
+    background-color: #3F2F21;
+    border-radius: 10px;
+    padding: 5px;
+    min-width: 150px;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+
+.team--member {
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 5px;
+    padding-top: 1rem;
+    background-image: url('img/pawns.jpg');
+    width: 80%;
+    max-width: 450px;
+}
+.team--member__info {
+    background-color: rgba(0,0,0,0.3);
+    
+}
+
+
+
+@media (min-width: 576px) {
+    
+    .navigation-bar__title {
+        display: none;
+    }
+
+    .logo-image {
+        display: inline-block;
+        flex: 1 150px;
+        max-width: 150px;
+    }
+
+    .navigation-bar {
+        display: flex;
+        align-items: center;
+    }
+
+    .navigation-bar__item {
+        margin: 0;
+    }
+
+    .navigation-bar__items {
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        flex: 1;
+    }
+
+    #introduction {
+        background-position: left 10%;
+    }
+}
+
+.team--title {
+    text-align: center;
+    color: #F2B366; 
+    text-shadow: 2px 2px #3F2F21;
+
+}
+
+.team--members {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+/* Tablets */
+@media (min-width: 768px) { 
+
+    .navigation-bar__item {
+        user-select: none;
+    }
+    .navigation-bar__item a{
+    font-size: 2vw;
+}
+    .navigation-bar__item:hover {
+        background-color: #F2B366;
+    }
+
+    .navigation-bar__item:hover > a {
+        color: #3F2F21;
+
+    }
+
+    .logo-image:hover {
+        animation:spin 4s linear infinite;
+
+    }
+
+    #introduction {
+        background-image: url('img/sleepingCat.jpg');
+        background-position: center 25%;
+        align-items: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+    }
+
+    .introduction--title {
+        padding: 16px;
+        background-color: rgba(0,0,0,0.3);
+        border-radius: 10px;
+        font-size: 4vw;
+    }
+
+    .team--members {
+        flex-direction: row;
+    }
+
+    .center-flex {
+        justify-content: center;
+        align-items: center;
+    }
+ }
+
+@media (min-width: 769px) and (max-width: 991px) {
+    nav {
+        background-color: cadetblue;
+    }
+}
+
+
+
+ /* Ordenadores de escritorio*/
+ @media (min-width: 992px) { 
+
+    .navigation-bar__item {
+        display: flex;
+
+        
+    }
+    #introduction {
+    background-position: center 45%;
+}
+
+}
+
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
